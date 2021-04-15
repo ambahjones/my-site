@@ -5,7 +5,12 @@
 html {
   font-size: 10px;
   text-align: center;
-  background-color: #cccccc;
+  background-color: #252422;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header {
@@ -17,14 +22,12 @@ header {
   height: 8rem;
   color: #cccccc;
   background-color: #252422;
-  display: flex;
   justify-content: flex-end;
   font-size: 2.4rem;
 }
 
 #link-list {
   list-style: none;
-  display: flex;
   padding: 1rem;
 }
 
@@ -37,6 +40,10 @@ header {
   text-decoration: none;
 }
 
+#link-list li:hover {
+  text-decoration: underline;
+}
+
 main {
   margin-top: 8rem;
 }
@@ -45,9 +52,9 @@ main {
   content: " ";
   z-index: 2;
   display: block;
-  background-color: rgb(204, 204, 204, 0.6);
+  background-color: rgb(204, 204, 204, 0.6); /*rgb of #cccccc*/
   position: absolute;
-  height: 70rem;
+  height: 60rem;
   width: 100%;
 }
 
@@ -68,7 +75,7 @@ main {
 
 h1 {
   position: relative;
-  font-size: 7.2rem;
+  font-size: 8.6rem;
   text-align: center;
   padding-top: 10rem;
   z-index: 5;
@@ -77,6 +84,46 @@ h1 {
 h2 {
   position: relative;
   font-size: 3.6rem;
-  padding-top: 10rem;
+  padding-top: 8rem;
   z-index: 5;
+}
+
+#intro {
+  width: 90%;
+  height: 50rem;
+  margin: 0 auto;
+}
+
+#about {
+  width: 50%;
+}
+
+#intro-img {
+  width: 50%;
+}
+
+#about-content {
+  color: #cccccc;
+  width: 90%;
+  height: 30rem;
+  margin: 10rem auto;
+  border: 3px solid #cccccc;
+  border-radius: 20px;
+}
+
+p {
+  padding: 1rem;
+}
+
+#img-frame {
+  width: 25rem;
+  height: 30rem;
+  margin: 10rem auto;
+  border: 3px solid #cccccc;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#intro-img img {
+  width: 25rem;
 }
