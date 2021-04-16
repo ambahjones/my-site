@@ -12,9 +12,9 @@
     <header class="flex">
       <nav>
         <ul class="flex" id="link-list">
-          <li class="link-list-item"><a href="">Introduction</a></li>
-          <li class="link-list-item"><a href="">Work</a></li>
-          <li class="link-list-item"><a href="">Contact</a></li>
+          <li class="link-list-item"><a href="#about">Introduction</a></li>
+          <li class="link-list-item"><a href="#my-work">Work</a></li>
+          <li class="link-list-item"><a href="#contact">Contact</a></li>
           <li class="link-list-item"><a href="">Resume</a></li>
         </ul>
       </nav>
@@ -22,31 +22,90 @@
 
     <main>
 
-      <div id="headline">
+      <section id="headline">
         <h1>Amber Jones</h1>
         <h2>Web Developer</h2>
-      </div>
+      </section>
 
-      <div class="flex" id="intro">
+      <section class="flex" id="intro">
         <div id="about">
-          <div id="about-content">
-            <p>test</p>
+          <div class="frame" id="about-content">
+            <p>Hello! I’m Amber and I am a former Cosmetologist working toward becoming a Full Stack Developer. In June of 2020, when
+            most of the world was shut down, I began learning how to code, a goal I have had for some time. I started by taking
+            frontend development classes with SheCodes, completing every class they offered at the time, then moved on to
+            freeCodeCamp and Codecademy to expand on the skills I had acquired from my initial courses.</p>
+            <p>I hope to begin work in a Junior Developer position while I continue to learn as much as possible about both front and
+            backend development. I am also interested in mobile app and software development and hope to move on to learning
+            languages that will help me in those areas once I have a good grasp on all that I need for full stack work.</p>
           </div>
         </div>
 
         <div id="intro-img">
           <div class="frame" id="img-frame">
-            <img src="./images/880F23A9-D7FF-4527-A903-3C1C211356D7.jpg" alt="">
+            <img src="./images/880F23A9-D7FF-4527-A903-3C1C211356D7.jpg" alt="portrait image of page owner">
           </div>
         </div>
-      </div>
+      </section>
 
-      <div id="projects"></div>
+      <hr>
 
-      <div id=""></div>
+      <section id="my-work">
+        <h2>My Work</h2>
+
+        <div class="flex" id="projects">
+          <div class="projectCard frame">
+            <h3 class="projectLabel"></h3>
+            <p class="skillsUsed"></p>
+          </div>
+                  
+          <div class="projectCard frame">
+            <h3 class="projectLabel"></h3>
+            <p class="skillsUsed"></p>
+          </div>
+                  
+          <div class="projectCard frame">
+            <h3 class="projectLabel"></h3>
+            <p class="skillsUsed"></p>
+          </div>
+
+          <div class="projectCard frame">
+            <h3 class="projectLabel"></h3>
+            <p class="skillsUsed"></p>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="flex" id="contact-content">
+          <div class="contactCard">
+            <a href=""><img src="" alt="email icon"></a>
+          </div>
+
+          <div class="contactCard">
+            <a href=""><img src="" alt="github icon"></a>
+          </div>
+
+          <div class="contactCard">
+            <a href=""><img src="" alt="linkedin icon"></a>
+          </div>
+
+          <div class="contactCard">
+            <a href=""><img src="" alt="twitter icon"></a>
+          </div>
+        </div>
+      </section>
+
     </main>
 
-    <footer></footer>
+    <hr>
+
+    <footer>
+      <p>Developed by Amber Jones</p>
+      <p>Images and icons from <a href="">Unsplash</a> and <a href=""></a></p>
+    </footer>
 
     <script>
       src = "style/mysite.js";

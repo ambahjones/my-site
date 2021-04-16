@@ -24,6 +24,7 @@ header {
   background-color: #252422;
   justify-content: flex-end;
   font-size: 2.4rem;
+  border-bottom: 1px solid #cccccc;
 }
 
 #link-list {
@@ -46,6 +47,11 @@ header {
 
 main {
   margin-top: 8rem;
+}
+
+hr {
+  width: 90%;
+  margin: 0 auto;
 }
 
 #headline::before {
@@ -81,7 +87,7 @@ h1 {
   z-index: 5;
 }
 
-h2 {
+#headline h2 {
   position: relative;
   font-size: 3.6rem;
   padding-top: 8rem;
@@ -90,40 +96,83 @@ h2 {
 
 #intro {
   width: 90%;
-  height: 50rem;
+  height: 60rem;
   margin: 0 auto;
 }
 
 #about {
-  width: 50%;
+  width: 65%;
 }
 
 #intro-img {
-  width: 50%;
+  width: 35%;
 }
 
-#about-content {
-  color: #cccccc;
-  width: 90%;
-  height: 30rem;
-  margin: 10rem auto;
+.frame {
   border: 3px solid #cccccc;
   border-radius: 20px;
 }
 
+#about-content {
+  color: #cccccc;
+  width: 85%;
+  height: 30rem;
+  margin: 15rem auto;
+}
+
 p {
-  padding: 1rem;
+  font-size: 1.7rem;
+  text-align: left;
+  padding: 2rem;
 }
 
 #img-frame {
   width: 25rem;
   height: 30rem;
-  margin: 10rem auto;
-  border: 3px solid #cccccc;
-  border-radius: 20px;
+  margin: 15rem auto;
   overflow: hidden;
 }
 
 #intro-img img {
   width: 25rem;
+}
+
+#my-work {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#my-work h2 {
+  font-size: 4.8rem;
+  color: #cccccc;
+  padding: 2rem 0;
+  margin: 2rem 0;
+}
+
+#projects {
+  justify-content: space-around;
+}
+
+.projectCard {
+  width: 45%;
+  height: 20rem;
+  margin: 2rem 0;
+}
+
+#contact {
+  height: 30rem;
+}
+
+#contact h2 {
+  font-size: 4.8rem;
+  color: #cccccc;
+  padding: 2rem 0;
+  margin: 2rem 0;
+}
+
+#contact-content {
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-around;
 }
