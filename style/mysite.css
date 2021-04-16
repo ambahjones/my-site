@@ -191,6 +191,13 @@ p {
   background-repeat: no-repeat;
 }
 
+#portfolio {
+  background-image: url(../resources/images/portfolio.png);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /*#skills {
   width: 80%;
   margin: 0 auto;
