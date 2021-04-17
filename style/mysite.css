@@ -27,7 +27,7 @@ header {
   border-bottom: 2px solid #cccccc;
 }
 
-#link-list {
+.linkList {
   list-style: none;
   padding: 1rem;
 }
@@ -36,12 +36,12 @@ header {
   padding: 1rem;
 }
 
-#link-list a {
+.linkList a {
   color: #cccccc;
   text-decoration: none;
 }
 
-#link-list li:hover {
+.linkList li:hover {
   text-decoration: underline;
 }
 
@@ -80,13 +80,17 @@ hr {
 }
 
 h1 {
-  position: relative;
   font-size: 8.6rem;
   text-align: center;
   padding-top: 10rem;
+}
+
+#headline h1 {
+  position: relative;
   z-index: 5;
   color: black;
 }
+
 h2 {
   font-size: 4.8rem;
 }
