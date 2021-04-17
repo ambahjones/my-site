@@ -24,7 +24,7 @@ header {
   background-color: #252422;
   justify-content: flex-end;
   font-size: 2.4rem;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 2px solid #cccccc;
 }
 
 #link-list {
@@ -205,7 +205,7 @@ p {
 }*/
 
 #skills h2 {
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 }
 
 #skills-box {
@@ -264,7 +264,10 @@ p {
 }
 
 footer {
+  height: 9rem;
+  border-top: 2px solid #cccccc;
   justify-content: space-around;
+  align-content: center;
 }
 
 footer a {
