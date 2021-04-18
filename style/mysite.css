@@ -45,8 +45,51 @@ header {
   text-decoration: underline;
 }
 
+@media only screen and (min-width: 769px) and (max-width: 834px) {
+  header {
+    height: 7rem;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    height: 6rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  header {
+    height: 6rem;
+    font-size: 1.5rem;
+  }
+}
+
 main {
   margin-top: 8rem;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 834px) {
+  main {
+    margin-top: 7rem;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  main {
+    margin-top: 6rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  main {
+    margin-top: 6rem;
+  }
 }
 
 hr {
@@ -79,6 +122,46 @@ hr {
   z-index: 1;
 }
 
+@media only screen and (min-width: 769px) and (max-width: 834px) {
+  #headline {
+    height: 35rem;
+  }
+
+  #headline::before {
+    height: 35rem;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #headline {
+    height: 31rem;
+  }
+
+  #headline::before {
+    height: 31rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #headline {
+    height: 70rem;
+  }
+
+  #headline::before {
+    height: 70rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #headline {
+    height: 50rem;
+  }
+
+  #headline::before {
+    height: 50rem;
+  }
+}
+
 h1 {
   font-size: 8.6rem;
   text-align: center;
@@ -103,6 +186,24 @@ h2 {
   color: black;
 }
 
+@media only screen and (min-width: 835px) and (max-width: 1200px) {
+  #headline h1 {
+    padding-top: 15rem;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 834px) {
+  #headline h1 {
+    padding-top: 3rem;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #headline h1 {
+    padding-top: 2.4rem;
+  }
+}
+
 #intro {
   width: 90%;
   height: 60rem;
@@ -111,15 +212,6 @@ h2 {
 
 #about {
   width: 65%;
-}
-
-#intro-img {
-  width: 35%;
-}
-
-.frame {
-  border: 3px solid #cccccc;
-  border-radius: 20px;
 }
 
 #about-box {
@@ -135,6 +227,15 @@ p {
   padding: 2rem;
 }
 
+#intro-img {
+  width: 35%;
+}
+
+.frame {
+  border: 3px solid #cccccc;
+  border-radius: 20px;
+}
+
 #img-frame {
   width: 25rem;
   height: 30rem;
@@ -144,6 +245,91 @@ p {
 
 #intro-img img {
   width: 25rem;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 834px) {
+  #intro {
+    height: auto;
+  }
+
+  #about {
+    width: 60%;
+    height: auto;
+  }
+
+  #about-box {
+    margin: 2rem auto;
+  }
+
+  #img-frame {
+    margin: 2rem auto;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #intro {
+    height: auto;
+  }
+
+  #about {
+    width: 60%;
+    height: auto;
+  }
+
+  #about-box {
+    margin: 2rem auto;
+  }
+
+  #img-frame {
+    margin: 2rem auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #intro {
+    height: auto;
+    flex-wrap: wrap-reverse;
+  }
+
+  #about {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1.5rem;
+  }
+
+  #about-box {
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  #intro-img {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  #img-frame {
+    margin: 2rem auto;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #about-box {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  #intro-img {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  #img-frame {
+    margin: 2rem auto;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
 }
 
 #my-work {
@@ -165,6 +351,39 @@ p {
   width: 45%;
   height: 20rem;
   margin: 2rem 0;
+}
+
+@media only screen and (min-width: 835px) and (max-width: 1200px) {
+  .projectCard {
+    width: 90%;
+    height: 30rem;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 834px) {
+  .projectCard {
+    width: 90%;
+    height: 25rem;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .projectCard {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .projectCard {
+    width: 90%;
+    height: 15rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .projectCard {
+    height: 10rem;
+  }
 }
 
 #weather {
@@ -233,6 +452,41 @@ p {
   height: 8rem;
 }
 
+/*@media only screen and (max-width: 480px) {
+  #skills {
+    height: auto;
+  }
+
+  #skills-box {
+  }
+}*/
+
+@media only screen and (max-width: 480px) {
+  #skills {
+    height: auto;
+  }
+
+  #skills h2 {
+    padding-bottom: 0;
+  }
+
+  #skills-box {
+    height: 15rem;
+  }
+
+  .skillsCard {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .skillsCard img {
+    display: block;
+    margin: 1rem auto;
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
 /*#contact {
   height: 30rem;
 }*/
@@ -262,6 +516,30 @@ p {
   height: 8rem;
 }
 
+@media only screen and (max-width: 480px) {
+  #contact {
+    height: auto;
+  }
+
+  #contact h2 {
+    padding-bottom: 0;
+  }
+
+  #contact-box {
+    height: 15rem;
+  }
+
+  .contactCard {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .contactCard img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
 #footer-rule {
   width: 100%;
   font-size: 0.8rem;
@@ -281,4 +559,16 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    height: auto;
+    font-size: 1.5rem;
+  }
+
+  footer p {
+    width: 100%;
+    text-align: center;
+  }
 }
