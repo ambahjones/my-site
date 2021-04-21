@@ -347,40 +347,69 @@ p {
   justify-content: space-around;
 }
 
-.projectCard {
+.projectCardOverlay {
   width: 45%;
   height: 20rem;
   margin: 2rem 0;
 }
 
+.projectCard {
+  width: 100%;
+  height: 20rem;
+  margin: 2rem 0;
+}
+
 @media only screen and (min-width: 835px) and (max-width: 1200px) {
-  .projectCard {
+  .projectCardOverlay {
     width: 90%;
+    height: 30rem;
+  }
+
+  .projectCard {
+    width: 100%;
     height: 30rem;
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 834px) {
-  .projectCard {
+  .projectCardOverlay {
     width: 90%;
+    height: 25rem;
+  }
+
+  .projectCard {
+    width: 100%;
     height: 25rem;
   }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .projectCard {
+  .projectCardOverlay {
     width: 90%;
+  }
+
+  .projectCard {
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .projectCard {
+  .projectCardOverlay {
     width: 90%;
+    height: 15rem;
+  }
+
+  .projectCard {
+    width: 100%;
     height: 15rem;
   }
 }
 
 @media only screen and (max-width: 320px) {
+  .projectCardOverlay {
+    height: 10rem;
+  }
+
   .projectCard {
     height: 10rem;
   }
