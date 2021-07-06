@@ -344,6 +344,8 @@ p {
 }
 
 #projects-box {
+  height: 72.5rem;
+  overflow: scroll;
   justify-content: space-around;
 }
 
