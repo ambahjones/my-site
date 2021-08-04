@@ -350,6 +350,34 @@ p {
   padding: 4rem 0;
 }
 
+.panel.active {
+  display: block;
+}
+
+.panel {
+  display: none;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  height: 8rem;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-family: "Times New Roman", Times, serif;
+  background-color: var(--main-background-color);
+  color: var(--main-accent-color);
+  border: 3px solid var(--main-accent-color);
+  border-radius: 5px;
+  height: 5rem;
+  width: 45%;
+}
+
 #projects-box,
 #links-box {
   height: 72.5rem;
