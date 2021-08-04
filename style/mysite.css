@@ -5,8 +5,10 @@
 html {
   font-size: 10px;
   text-align: center;
-  background-color: #252422;
-  color: #cccccc;
+  --main-background-color: #252422;
+  --main-accent-color: #cccccc;
+  background-color: var(--main-background-color);
+  color: var(--main-accent-color);
 }
 
 .flex {
@@ -21,10 +23,10 @@ header {
   left: 0;
   width: 100%;
   height: 8rem;
-  background-color: #252422;
+  background-color: var(--main-background-color);
   justify-content: flex-end;
   font-size: 2.4rem;
-  border-bottom: 2px solid #cccccc;
+  border-bottom: 2px solid var(--main-accent-color);
 }
 
 .linkList {
@@ -37,7 +39,7 @@ header {
 }
 
 .linkList a {
-  color: #cccccc;
+  color: var(--main-accent-color);
   text-decoration: none;
 }
 
@@ -101,7 +103,12 @@ hr {
   content: " ";
   z-index: 2;
   display: block;
-  background-color: rgb(204, 204, 204, 0.6); /*rgb of #cccccc*/
+  background-color: rgba(
+    204,
+    204,
+    204,
+    0.6
+  ); /*rgba of #cccccc to include opacity*/
   position: absolute;
   height: 60rem;
   width: 100%;
@@ -232,7 +239,7 @@ p {
 }
 
 .frame {
-  border: 3px solid #cccccc;
+  border: 3px solid var(--main-accent-color);
   border-radius: 20px;
 }
 
@@ -343,10 +350,6 @@ p {
   padding: 4rem 0;
 }
 
-button {
-  font-family: "Times New Roman", Times, serif;
-}
-
 #projects-box,
 #links-box {
   height: 72.5rem;
@@ -433,6 +436,25 @@ button {
   padding-top: 1.2rem;
 }
 
+.btnBox {
+  display: inline;
+  width: 45%;
+  height: 10rem;
+}
+
+.button {
+  height: 3rem;
+  width: 12.5rem;
+  margin: 0 2rem;
+  padding: 0.5rem 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  color: var(--main-accent-color);
+  border: 3px solid var(--main-accent-color);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
 .skillsUsed {
   width: 75%;
   margin: 0 auto;
@@ -447,23 +469,26 @@ button {
   justify-content: space-around;
 }
 
-.btnBox {
-  display: inline;
-  width: 45%;
-  height: 10rem;
-}
-
 .btnBox .weatherBtn {
   display: block;
   margin: 0.5rem auto;
+  padding: 0.5rem 0 0 0;
   width: 60%;
   height: 3rem;
   font-family: "Times New Roman", Times, serif;
 }
 
-.btnBox button {
-  height: 3rem;
-  width: 12.5rem;
+.btnBox2 {
+  display: inline-flex;
+  align-items: center;
+  height: 10rem;
+  width: 60%;
+}
+
+#portfolio-btn-box {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 /*#skills {
@@ -487,7 +512,7 @@ button {
 .skillsCard {
   width: 10rem;
   height: 10rem;
-  background-color: #cccccc;
+  background-color: var(--main-accent-color);
 }
 
 .skillsCard img {
@@ -551,7 +576,7 @@ button {
 .contactCard {
   width: 10rem;
   height: 10rem;
-  background-color: #cccccc;
+  background-color: var(--main-accent-color);
 }
 
 .contactCard img {
@@ -592,13 +617,13 @@ button {
 
 footer {
   height: 9rem;
-  border-top: 2px solid #cccccc;
+  border-top: 2px solid var(--main-accent-color);
   justify-content: space-around;
   align-content: center;
 }
 
 footer a {
-  color: #cccccc;
+  color: var(--main-accent-color);
   text-decoration: none;
 }
 
