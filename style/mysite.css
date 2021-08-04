@@ -340,33 +340,27 @@ p {
 }
 
 #my-work h2 {
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
-#projects-box {
+button {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#projects-box,
+#links-box {
   height: 72.5rem;
   overflow: scroll;
   justify-content: space-around;
 }
 
-.projectCardOverlay {
+.projectCard {
   width: 45%;
   height: 20rem;
   margin: 2rem 0;
 }
 
-.projectCard {
-  width: 100%;
-  height: 20rem;
-  margin: 2rem 0;
-}
-
 @media only screen and (min-width: 835px) and (max-width: 1200px) {
-  .projectCardOverlay {
-    width: 90%;
-    height: 30rem;
-  }
-
   .projectCard {
     width: 100%;
     height: 30rem;
@@ -374,11 +368,6 @@ p {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 834px) {
-  .projectCardOverlay {
-    width: 90%;
-    height: 25rem;
-  }
-
   .projectCard {
     width: 100%;
     height: 25rem;
@@ -386,21 +375,12 @@ p {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .projectCardOverlay {
-    width: 90%;
-  }
-
   .projectCard {
     width: 100%;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .projectCardOverlay {
-    width: 90%;
-    height: 15rem;
-  }
-
   .projectCard {
     width: 100%;
     height: 15rem;
@@ -408,10 +388,6 @@ p {
 }
 
 @media only screen and (max-width: 320px) {
-  .projectCardOverlay {
-    height: 10rem;
-  }
-
   .projectCard {
     height: 10rem;
   }
@@ -450,6 +426,44 @@ p {
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#links-box h3 {
+  font-size: 2rem;
+  padding-top: 1.2rem;
+}
+
+.skillsUsed {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.btnBoxContainer {
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.btnBox {
+  display: inline;
+  width: 45%;
+  height: 10rem;
+}
+
+.btnBox .weatherBtn {
+  display: block;
+  margin: 0.5rem auto;
+  width: 60%;
+  height: 3rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.btnBox button {
+  height: 3rem;
+  width: 12.5rem;
 }
 
 /*#skills {

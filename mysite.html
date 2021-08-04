@@ -63,44 +63,88 @@
       <section id="my-work">
         <h2>My Work</h2>
 
-        <div class="flex" id="projects-box">
-
-          <div class="projectCardOverlay" id="weather-overlay">
-            <div class="projectCard frame" id="weather">
-              <h3 class="projectLabel" id="weather-label"></h3>
-              <p class="skillsUsed" id="weather-skills"></p>
-            </div>
+        <article>
+          <div class="btnContainer">
+            <button class="tab active" data-id="projects-panel">Project Images</button>
+            <button class="tab" data-id="links-panel">Source Code</button>
           </div>
+        </article>
 
-          <div class="projectCardOverlay">        
-            <div class="projectCard frame" id="tea-cozy">
-              <h3 class="projectLabel" id="tea-label"></h3>
-              <p class="skillsUsed" id="tea-skills"></p>
-            </div>
-          </div>
+        <article>
+          <div class="panel active" id="projects-panel">
+            <div class="flex" id="projects-box">
+
+              <div class="projectCard frame" id="weather"></div>
+       
+              <div class="projectCard frame" id="tea-cozy"></div>
              
-          <div class="projectCardOverlay">
-            <div class="projectCard frame" id="company-page">
-              <h3 class="projectLabel" id="company-label"></h3>
+              <div class="projectCard frame" id="company-page"></div>
+
+              <div class="projectCard frame" id="club-page"></div>
+
+              <div class="projectCard frame" id="portfolio"></div>
+
+            </div>
+          </div>
+
+          <div class="panel" id="links-panel">
+            <div class="flex" id="links-box">
+
+            <div class="projectCard frame" id="weather-links">
+              <h3 class="projectLabel" id="weather-label">Weather Web App</h3>
+              <p class="skillsUsed" id="weather-skills">Two versions of a weather web application, one using pure JavaScript and another using React.</p>
+              <div class="flex btnBoxContainer">
+                <div class="btnBox">
+                  <button class="weatherBtn">JS Live</button>
+                  <button class="weatherBtn">JS Code</button>
+                </div>
+                <div class="btnBox">
+                  <button class="weatherBtn">React Live</button>
+                  <button class="weatherBtn">React Code</button>
+                </div>
+              </div>
+            </div>
+                        
+            <div class="projectCard frame" id="tea-cozy-links">
+              <h3 class="projectLabel" id="tea-label">Tea Cozy mock website</h3>
+              <p class="skillsUsed" id="tea-skills">Flex box practice project</p>
+              <div class="btnBox">
+                <button>Live</button>
+                <button>Code</button>
+              </div>
+            </div>
+                      
+            <div class="projectCard frame" id="company-page-links">
+              <h3 class="projectLabel" id="company-label">Faux Company Homepage</h3>
               <p class="skillsUsed" id="company-skills"></p>
+              <div class="btnBox">
+                <button>Live</button>
+                <button>Code</button>
+              </div>
             </div>
-          </div>
-
-          <div class="projectCardOverlay">
-            <div class="projectCard frame" id="club-page">
-              <h3 class="projectLabel" id="club-label"></h3>
+                        
+            <div class="projectCard frame" id="club-page-links">
+              <h3 class="projectLabel" id="club-label">Faux club events page</h3>
               <p class="skillsUsed" id="club-skills"></p>
+              <div class="btnBox">
+                <button>Live</button>
+                <button>Code</button>
+              </div>
+            </div>
+                        
+            <div class="projectCard frame" id="portfolio-links">
+              <h3 class="projectLabel" id="portfolio-label">Personal page</h3>
+              <p class="skillsUsed" id="portfolio-skills">The page you are currently viewing!</p>
+              <div class="btnBox">
+                <button>Code</button>
+              </div>
+            </div>
+
             </div>
           </div>
 
-          <div class="projectCardOverlay">
-            <div class="projectCard frame" id="portfolio">
-              <h3 class="projectLabel" id="portfolio-label"></h3>
-              <p class="skillsUsed" id="portfolio-skills"></p>
-            </div>
-          </div>
+        </article>
 
-        </div>
       </section>
 
       <hr>
@@ -111,18 +155,22 @@
         <div class="flex" id="skills-box">
           <div class="skillsCard frame">
             <img src="./resources/icons/html-icon.webp" alt="html icon">
+            <p class="label">HTML</p>
           </div>
 
           <div class="skillsCard frame">
             <img src="./resources/icons/css-icon.webp" alt="css icon">
+            <p class="label">CSS</p>
           </div>
 
           <div class="skillsCard frame">
             <img src="./resources/icons/javascript-icon.webp" alt="javascript icon">
+            <p class="label">JavaScript</p>
           </div>
 
           <div class="skillsCard frame">
             <img src="./resources/icons/react-icon.webp" alt="react icon">
+            <p class="label">React</p>
           </div>
         </div>
       </section>
