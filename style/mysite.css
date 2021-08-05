@@ -601,7 +601,13 @@ button {
   align-content: center;
 }
 
+.skillsContainer {
+  width: 12rem;
+  height: 15rem;
+}
+
 .skillsCard {
+  margin: 0 auto;
   width: 10rem;
   height: 10rem;
   background-color: var(--main-accent-color);
@@ -612,6 +618,10 @@ button {
   margin: 1rem auto;
   width: 8rem;
   height: 8rem;
+}
+
+.label {
+  text-align: center;
 }
 
 /*@media only screen and (max-width: 480px) {
@@ -628,12 +638,22 @@ button {
     height: auto;
   }
 
-  #skills h2 {
-    padding-bottom: 0;
+  #skills-box {
+    width: 100%;
+    height: auto;
   }
 
-  #skills-box {
-    height: 15rem;
+  #skills h2 {
+    padding: 1.5rem 0;
+  }
+
+  .skillsContainer {
+    width: 7.5rem;
+    height: 12rem;
+  }
+
+  .label {
+    font-size: 1.1rem;
   }
 
   .skillsCard {
