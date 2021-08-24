@@ -1,3 +1,9 @@
+html {
+  font-size: 10px;
+  --main-background-color: #252422;
+  --main-accent-color: #cccccc;
+}
+
 #header-box ul {
   font-size: 1.8rem;
   list-style: none;
@@ -13,12 +19,36 @@
 }
 
 #header-box a {
-  color: #cccccc;
+  color: var(--main-accent-color);
   text-decoration: none;
 }
 
 #header-box a:hover {
   text-decoration: underline;
+}
+
+.resHeader {
+  line-height: 12rem;
+}
+
+.resArticle {
+  width: 75%;
+  margin: 0 auto;
+  padding: 2rem 0 4rem 0;
+}
+
+.resLink {
+  color: var(--main-accent-color);
+}
+
+.edInfo {
+  padding: 0;
+}
+
+.edList {
+  text-align: left;
+  padding: 2rem;
+  font-size: 1.6rem;
 }
 
 #privacy p {
