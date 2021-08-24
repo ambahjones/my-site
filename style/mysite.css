@@ -728,10 +728,11 @@ button {
 }
 
 footer {
-  height: 9rem;
+  height: auto;
   border-top: 2px solid var(--main-accent-color);
   justify-content: space-around;
   align-content: center;
+  padding: 2rem;
 }
 
 footer a {
