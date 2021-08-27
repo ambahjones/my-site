@@ -392,7 +392,7 @@ button {
 
 #projects-box,
 #links-box {
-  height: 72.5rem;
+  height: 50.5rem;
   overflow: scroll;
   justify-content: space-around;
 }
@@ -512,9 +512,9 @@ button {
 .btnBox .weatherBtn {
   display: block;
   margin: 0.5rem auto;
-  padding: 0.5rem 0 0 0;
+  /*padding: 0.5rem 0 0 0;*/
   width: 60%;
-  height: 3rem;
+  line-height: 3rem;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -523,6 +523,7 @@ button {
   align-items: center;
   justify-content: space-around;
   height: 10rem;
+  line-height: 3rem;
   width: 60%;
 }
 
