@@ -69,6 +69,7 @@ footer .contactCard img {
 
 @media only screen and (min-width: 481px) and (max-width: 1200px) {
   footer #privacy {
+    width: 70%;
     align-content: space-around;
   }
 }
