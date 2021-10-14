@@ -400,8 +400,47 @@ button {
 .projectCard {
   width: 45%;
   height: 20rem;
-  margin: 2rem 0;
+  margin: 2rem auto;
 }
+
+/*
+trying out alternative tab set up
+.tabsWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.wrapper {
+  display: grid;
+  width: 45%;
+}
+
+.weatherTabs {
+  margin: 0 auto;
+  width: 96%;
+}
+
+[role="tablist"] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  width: 90%;
+}
+
+[role="tab"] {
+  border-bottom: none;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 75%;
+}
+
+[role="tabpanel"] {
+  margin-top: 0px;
+  width: 95%;
+  border-top-left-radius: 0px;
+}
+*/
 
 @media only screen and (min-width: 835px) and (max-width: 1200px) {
   .projectCard {
