@@ -122,7 +122,7 @@ hr {
 #headline {
   position: relative;
   height: 60rem;
-  background-image: url('../public/images/altinay-dinc-LluELtL5mK4-unsplash.jpg');
+  background-image: url("../public/images/altinay-dinc-LluELtL5mK4-unsplash.jpg");
   background-position: center top 40%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -250,7 +250,7 @@ p {
   overflow: hidden;
 }
 
-#intro-img img {
+#intro-img {
   width: 25rem;
 }
 
