@@ -47,6 +47,7 @@ header {
   text-decoration: underline;
 }
 
+/*
 @media only screen and (min-width: 769px) and (max-width: 834px) {
   header {
     height: 7rem;
@@ -57,7 +58,7 @@ header {
   header {
     height: 6rem;
   }
-}
+}*/
 
 @media only screen and (max-width: 480px) {
   header {
@@ -76,7 +77,7 @@ main {
   margin-top: 8rem;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 834px) {
+/*@media only screen and (min-width: 769px) and (max-width: 834px) {
   main {
     margin-top: 7rem;
   }
@@ -86,7 +87,7 @@ main {
   main {
     margin-top: 6rem;
   }
-}
+}*/
 
 @media only screen and (max-width: 320px) {
   main {
@@ -110,18 +111,14 @@ hr {
     0.6
   ); /*rgba of #cccccc to include opacity*/
   position: absolute;
-  height: 60rem;
+  height: 90vh;
   width: 100%;
 }
 
-/*#headline-overlay {
-  position: relative;
-  z-index: 4;
-}*/
-
 #headline {
   position: relative;
-  height: 60rem;
+  /*height: 60rem;*/
+  height: 90vh;
   background-image: url(../resources/images/altinay-dinc-LluELtL5mK4-unsplash.jpg);
   background-position: center top 40%;
   background-size: cover;
@@ -129,71 +126,60 @@ hr {
   z-index: 1;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 834px) {
+@media only screen and (max-width: 768px) {
   #headline {
-    height: 35rem;
+    height: 95vh;
   }
 
   #headline::before {
-    height: 35rem;
+    height: 95vh;
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  #headline {
-    height: 31rem;
-  }
-
-  #headline::before {
-    height: 31rem;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  #headline {
-    height: 70rem;
-  }
-
-  #headline::before {
-    height: 70rem;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  #headline {
-    height: 50rem;
-  }
-
-  #headline::before {
-    height: 50rem;
-  }
+#heading-container {
+  height: 100%;
+  align-content: center;
 }
 
 h1 {
   font-size: 8.6rem;
   text-align: center;
-  padding-top: 10rem;
+  line-height: 15rem;
 }
 
-#headline h1 {
-  position: relative;
+#heading-container h1 {
+  /*position: relative;*/
   z-index: 5;
   color: black;
+  width: 100%;
 }
 
 h2 {
   font-size: 4.8rem;
 }
 
-#headline h2 {
-  position: relative;
+#heading-container h2 {
+  /*position: relative;*/
   font-size: 3.6rem;
-  padding-top: 8rem;
+  line-height: 10rem;
   z-index: 5;
   color: black;
+  width: 100%;
 }
 
-@media only screen and (min-width: 835px) and (max-width: 1200px) {
+@media only screen and (max-width: 500px) {
+  #heading-container h1 {
+    font-size: 6.2rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  #heading-container h1 {
+    font-size: 5.2rem;
+  }
+}
+
+/*@media only screen and (min-width: 835px) and (max-width: 1200px) {
   #headline h1 {
     padding-top: 15rem;
   }
@@ -207,9 +193,9 @@ h2 {
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   #headline h1 {
-    padding-top: 2.4rem;
+    padding-top: 3.4rem;
   }
-}
+}*/
 
 #intro {
   width: 90%;
@@ -273,13 +259,13 @@ p {
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 768px) {
   #intro {
     height: auto;
   }
 
   #about {
-    width: 60%;
+    width: 55%;
     height: auto;
   }
 
@@ -287,12 +273,16 @@ p {
     margin: 2rem auto;
   }
 
+  #intro-img {
+    width: 35%;
+  }
+
   #img-frame {
     margin: 2rem auto;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   #intro {
     height: auto;
     flex-wrap: wrap-reverse;
@@ -305,7 +295,7 @@ p {
   }
 
   #about-box {
-    width: 80%;
+    width: 75%;
     margin: 2rem auto;
   }
 
@@ -673,13 +663,14 @@ trying out alternative tab set up
   }
 }*/
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   #skills {
     height: auto;
   }
 
   #skills-box {
-    width: 100%;
+    padding: 2.5rem 0;
+    width: 90%;
     height: auto;
   }
 
@@ -706,6 +697,12 @@ trying out alternative tab set up
     margin: 1rem auto;
     width: 4rem;
     height: 4rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .skillsContainer {
+    width: 6.5rem;
   }
 }
 
@@ -738,7 +735,7 @@ trying out alternative tab set up
   height: 8rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   #contact {
     height: auto;
   }
