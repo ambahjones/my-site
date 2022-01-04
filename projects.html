@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Amber Jones</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Mono:ital,wght@0,300;1,300&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="style/mysite.css">
+</head>
+<body>
+    <header class="flex">
+        <div class="homeLink"><a href="index.html" aria-label="link to home page">&lt;AJ&gt;</a></div>
+        <nav>
+            <ul class="flex linkList">
+                <li class="link-list-item"><a href="#about">Introduction</a></li>
+                <li class="link-list-item"><a href="#my-work">Work</a></li>
+                <li class="link-list-item"><a href="#contact">Contact</a></li>                    
+                <li class="link-list-item"><a href="resume.html" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <section id="my-work">
+            <h2>My Work</h2>
+        
+            <article class="projectTabNav">
+                <div class="btnContainer">
+                    <button class="tab active" data-id="projects-panel">Project Images</button>
+                    <button class="tab" data-id="links-panel">Source Code</button>
+                </div>
+            </article>
+        
+            <article>
+        
+                <div class="panel active" id="projects-panel">
+                    <div class="flex" id="projects-box">
+        
+                        <div class="projectCard frame" id="weather"></div>
+        
+                        <div class="projectCard frame" id="tea-cozy"></div>
+        
+                        <div class="projectCard frame" id="company-page"></div>
+        
+                        <div class="projectCard frame" id="club-page"></div>
+        
+                        <div class="projectCard frame" id="portfolio"></div>
+        
+                    </div>
+                </div>
+        
+                <div class="panel" id="links-panel">
+                    <div class="flex" id="links-box">
+        
+                        <div class="projectCard frame links" id="weather-links">
+                            <h3 class="projectLabel" id="weather-label">Weather Web App</h3>
+                            <p class="skillsUsed" id="weather-skills">Two versions of a weather web application, one using pure
+                                JavaScript and another using React.</p>
+                            <div class="flex btnBoxContainer">
+                                <div class="btnBox">
+                                    <a class="button weatherBtn" href="https://unruffled-sammet-45d5b4.netlify.app/"
+                                        target="_blank">JS Live</a>
+                                    <a class="button weatherBtn" href="https://github.com/ambahjones/my-weather-app"
+                                        target="_blank">JS Code</a>
+                                </div>
+                                <div class="btnBox">
+                                    <a class="button weatherBtn" href="https://focused-brattain-c3d371.netlify.app/"
+                                        target="_blank">React Live</a>
+                                    <a class="button weatherBtn" href="https://github.com/ambahjones/weather-react"
+                                        target="_blank">React Code</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="projectCard frame links" id="tea-cozy-links">
+                            <h3 class="projectLabel" id="tea-label">Tea Cozy mock website</h3>
+                            <p class="skillsUsed" id="tea-skills">Flex box practice project usng course provided images and
+                                design spec sheet.</p>
+                            <div class="btnBox2">
+                                <a class="button" href="https://ambahjones.github.io/tea-cozy/" target="_blank">Live</a>
+                                <a class="button" href="https://github.com/ambahjones/tea-cozy" target="_blank">Code</a>
+                            </div>
+                        </div>
+        
+                        <div class="projectCard frame links" id="company-page-links">
+                            <h3 class="projectLabel" id="company-label">Faux Company Homepage</h3>
+                            <p class="skillsUsed" id="company-skills">Homepage for a self created company using flex box and an
+                                individual design.</p>
+                            <div class="btnBox2">
+                                <a class="button" href="https://ambahjones.github.io/company-homepage/" target="_blank">Live</a>
+                                <a class="button" href="https://github.com/ambahjones/company-homepage" target="_blank">Code</a>
+                            </div>
+                        </div>
+        
+                        <div class="projectCard frame links" id="club-page-links">
+                            <h3 class="projectLabel" id="club-label">Faux club events page</h3>
+                            <p class="skillsUsed" id="club-skills">Club events page using responsive design elements. Personal
+                                choice to link to company homepage.</p>
+                            <div class="btnBox2">
+                                <a class="button" href="https://ambahjones.github.io/club-page/" target="_blank">Live</a>
+                                <a class="button" href="https://github.com/ambahjones/club-page" target="_blank">Code</a>
+                            </div>
+                        </div>
+        
+                        <div class="projectCard frame links" id="portfolio-links">
+                            <h3 class="projectLabel" id="portfolio-label">Personal page</h3>
+                            <p class="skillsUsed" id="portfolio-skills">The page you are currently viewing!</p>
+                            <div class="btnBox2" id="portfolio-btn-box">
+                                <a class="button" href="https://github.com/ambahjones/portfolio" target="_blank">Code</a>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+        
+            </article>
+        
+        </section>
+</body>
+</html>

@@ -4,6 +4,26 @@ html {
   --main-accent-color: #cccccc;
 }
 
+.resumeWrapper {
+  border: 2px solid var(--main-accent-color);
+  width: 75%;
+  margin: 15rem auto;
+}
+
+h1 {
+  font-size: 6.4rem;
+  text-align: left;
+  line-height: 10rem;
+  padding-left: 3.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 5rem;
+  text-align: left;
+  padding-left: 3.5rem;
+}
+
 #header-box ul {
   font-size: 1.8rem;
   list-style: none;
@@ -25,10 +45,6 @@ html {
 
 #header-box a:hover {
   text-decoration: underline;
-}
-
-.resHeader {
-  line-height: 12rem;
 }
 
 .resArticle {

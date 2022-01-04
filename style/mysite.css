@@ -9,6 +9,7 @@ html {
   --main-accent-color: #cccccc;
   background-color: var(--main-background-color);
   color: var(--main-accent-color);
+  font-family: "Roboto Mono", monospace;
 }
 
 .flex {
@@ -27,6 +28,15 @@ header {
   justify-content: flex-end;
   font-size: 2.4rem;
   border-bottom: 2px solid var(--main-accent-color);
+  justify-content: space-between;
+}
+
+.homeLink a {
+  line-height: 8rem;
+  font-size: 5.2rem;
+  color: var(--main-accent-color);
+  text-decoration: none;
+  padding-left: 2rem;
 }
 
 .linkList {
@@ -145,6 +155,8 @@ h1 {
   font-size: 8.6rem;
   text-align: center;
   line-height: 15rem;
+  font-family: "Cutive Mono", monospace;
+  font-weight: 700;
 }
 
 #heading-container h1 {
@@ -217,7 +229,7 @@ h2 {
 p {
   font-size: 1.7rem;
   text-align: left;
-  padding: 2rem;
+  padding: 0.6rem;
 }
 
 #intro-img {
