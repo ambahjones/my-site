@@ -1,0 +1,111 @@
+html {
+  --main-background-color: #252422;
+  --main-accent-color: #cccccc;
+}
+
+h2 {
+  padding-top: 2rem;
+}
+
+h3 {
+  text-align: left;
+  font-size: 4rem;
+  color: var(--main-accent-color);
+  text-decoration: none;
+}
+
+h4 {
+  text-align: left;
+  font-size: 2.8rem;
+}
+
+a {
+  color: var(--main-accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  width: 60%;
+  padding: 2rem 0;
+}
+
+article {
+  padding: 2rem 0;
+}
+
+.projects {
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.desc {
+  justify-content: space-between;
+}
+
+.projectCard {
+  width: 26.4%;
+  height: 14.5rem;
+  margin: 2rem 0;
+}
+
+@media only screen and (min-width: 835px) and (max-width: 1200px) {
+  .projectCard {
+    width: 100%;
+    height: 30rem;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 834px) {
+  .projectCard {
+    width: 100%;
+    height: 25rem;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .projectCard {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .projectCard {
+    width: 100%;
+    height: 15rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .projectCard {
+    height: 10rem;
+  }
+}
+
+#canvas {
+  background-image: url(../resources/images/canvas.png);
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#portfolio {
+  background-image: url(../resources/images/portfolio.png);
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#weather {
+  background-image: url(../resources/images/react-weather.png);
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+footer p {
+  width: 40%;
+}
