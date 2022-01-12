@@ -14,9 +14,21 @@ h3 {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 320px) {
+  h3 {
+    font-size: 3rem;
+  }
+}
+
 h4 {
   text-align: left;
   font-size: 2.8rem;
+}
+
+@media only screen and (max-width: 320px) {
+  h4 {
+    font-size: 2.2rem;
+  }
 }
 
 a {
@@ -31,6 +43,12 @@ a:hover {
 p {
   width: 60%;
   padding: 2rem 0;
+}
+
+@media only screen and (max-width: 480px) {
+  p {
+    width: 100%;
+  }
 }
 
 article {
@@ -73,14 +91,29 @@ article {
 }
 
 @media only screen and (max-width: 480px) {
+  .desc {
+    justify-content: space-evenly;
+  }
+
   .projectCard {
-    width: 100%;
+    width: 82%;
     height: 15rem;
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
   .projectCard {
+    height: 12rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .desc {
+    justify-content: space-evenly;
+  }
+
+  .projectCard {
+    width: 82%;
     height: 10rem;
   }
 }
@@ -108,4 +141,11 @@ article {
 
 footer p {
   width: 40%;
+}
+
+@media only screen and (max-width: 480px) {
+  footer p {
+    width: 100%;
+    text-align: center;
+  }
 }

@@ -57,47 +57,44 @@ header {
   text-decoration: underline;
 }
 
-/*
-@media only screen and (min-width: 769px) and (max-width: 834px) {
+@media only screen and (max-width: 500px) {
   header {
-    height: 7rem;
+    font-size: 1.6rem;
   }
-}
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  header {
-    height: 6rem;
+  #contact-link {
+    display: none;
   }
-}*/
 
-@media only screen and (max-width: 480px) {
-  header {
-    font-size: 1.8rem;
+  .homeLink a {
+    font-size: 3.2rem;
   }
 }
 
 @media only screen and (max-width: 320px) {
   header {
     height: 6rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  nav {
+    width: 55%;
+  }
+
+  #contact-link {
+    display: none;
+  }
+
+  .homeLink a {
+    line-height: 6rem;
+    padding: 1rem;
+    font-size: 3rem;
   }
 }
 
 main {
   margin-top: 8rem;
 }
-
-/*@media only screen and (min-width: 769px) and (max-width: 834px) {
-  main {
-    margin-top: 7rem;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  main {
-    margin-top: 6rem;
-  }
-}*/
 
 @media only screen and (max-width: 320px) {
   main {
@@ -189,25 +186,14 @@ h2 {
   }
 }
 
-/*@media only screen and (min-width: 835px) and (max-width: 1200px) {
-  #headline h1 {
-    padding-top: 15rem;
+@media only screen and (max-width: 320px) {
+  #heading-container h1 {
+    font-size: 4.6rem;
   }
 }
-
-@media only screen and (min-width: 769px) and (max-width: 834px) {
-  #headline h1 {
-    padding-top: 3rem;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  #headline h1 {
-    padding-top: 3.4rem;
-  }
-}*/
 
 #intro {
+  justify-content: space-between;
   width: 90%;
   height: 60rem;
   margin: 0 auto;
@@ -271,10 +257,11 @@ p {
 
   #about-box {
     margin: 2rem auto;
+    height: auto;
   }
 
   #img-frame {
-    margin: 2rem auto;
+    margin: 7rem auto;
   }
 }
 
@@ -290,14 +277,15 @@ p {
 
   #about-box {
     margin: 2rem auto;
+    height: auto;
   }
 
   #intro-img {
-    width: 35%;
+    width: 45%;
   }
 
   #img-frame {
-    margin: 2rem auto;
+    margin: 7rem auto;
   }
 }
 
@@ -316,6 +304,7 @@ p {
   #about-box {
     width: 75%;
     margin: 2rem auto;
+    height: auto;
   }
 
   #intro-img {
@@ -332,6 +321,7 @@ p {
   #about-box {
     width: 90%;
     margin: 2rem auto;
+    height: auto;
   }
 
   #intro-img {
