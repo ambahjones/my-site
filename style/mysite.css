@@ -338,57 +338,6 @@ p {
   }
 }
 
-#my-work {
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
-  padding-bottom: 2rem;
-}
-
-#my-work h2 {
-  padding: 4rem 0;
-}
-
-.panel.active {
-  display: block;
-}
-
-.panel {
-  display: none;
-}
-
-.btnContainer {
-  display: flex;
-  justify-content: space-between;
-  width: 40%;
-  height: 8rem;
-  margin: 0 auto;
-}
-
-button {
-  cursor: pointer;
-  font-size: 1.6rem;
-  font-family: "Times New Roman", Times, serif;
-  background-color: var(--main-background-color);
-  color: var(--main-accent-color);
-  border: 3px solid var(--main-accent-color);
-  border-radius: 5px;
-  height: 5rem;
-  width: 45%;
-}
-
-@media only screen and (min-width: 481px) and (max-width: 834px) {
-  .btnContainer {
-    width: 60%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .btnContainer {
-    width: 90%;
-  }
-}
-
 #skills h2 {
   padding: 2rem 0;
 }

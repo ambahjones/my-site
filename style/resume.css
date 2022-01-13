@@ -4,67 +4,10 @@ html {
   --main-accent-color: #cccccc;
 }
 
-.resumeWrapper {
-  border: 2px solid var(--main-accent-color);
-  width: 75%;
-  margin: 15rem auto;
-}
-
-h1 {
-  font-size: 6.4rem;
-  text-align: left;
-  line-height: 10rem;
-  padding-left: 3.5rem;
-}
-
-h2 {
-  font-size: 4rem;
-  line-height: 5rem;
-  text-align: left;
-  padding-left: 3.5rem;
-}
-
-#header-box ul {
-  font-size: 1.8rem;
-  list-style: none;
-  padding: 2rem 0;
-}
-
-#header-box li {
-  padding: 1rem 0;
-}
-
-#city {
-  font-size: 3.6rem;
-}
-
-#header-box a {
-  color: var(--main-accent-color);
-  text-decoration: none;
-}
-
-#header-box a:hover {
-  text-decoration: underline;
-}
-
-.resArticle {
-  width: 75%;
+.wrapper p {
+  width: 70%;
+  height: 30rem;
   margin: 0 auto;
-  padding: 2rem 0 4rem 0;
-}
-
-.resLink {
-  color: var(--main-accent-color);
-}
-
-.edInfo {
-  padding: 0;
-}
-
-.edList {
-  text-align: left;
-  padding: 2rem;
-  font-size: 1.6rem;
 }
 
 #privacy p {
