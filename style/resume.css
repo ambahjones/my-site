@@ -4,51 +4,10 @@ html {
   --main-accent-color: #cccccc;
 }
 
-#header-box ul {
-  font-size: 1.8rem;
-  list-style: none;
-  padding: 2rem 0;
-}
-
-#header-box li {
-  padding: 1rem 0;
-}
-
-#city {
-  font-size: 3.6rem;
-}
-
-#header-box a {
-  color: var(--main-accent-color);
-  text-decoration: none;
-}
-
-#header-box a:hover {
-  text-decoration: underline;
-}
-
-.resHeader {
-  line-height: 12rem;
-}
-
-.resArticle {
-  width: 75%;
+.wrapper p {
+  width: 70%;
+  height: 30rem;
   margin: 0 auto;
-  padding: 2rem 0 4rem 0;
-}
-
-.resLink {
-  color: var(--main-accent-color);
-}
-
-.edInfo {
-  padding: 0;
-}
-
-.edList {
-  text-align: left;
-  padding: 2rem;
-  font-size: 1.6rem;
 }
 
 #privacy p {

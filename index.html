@@ -3,19 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amber Jones | Development Portfolio</title>
+    <title>Amber Jones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Mono:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/mysite.css">
   </head>
 
   <body>
 
     <header class="flex">
+      <div class="homeLink"><a href="index.html" aria-label="link to home page">&lt;AJ&gt;</a></div>
       <nav>
         <ul class="flex linkList">
-          <li class="link-list-item"><a href="#about">Introduction</a></li>
-          <li class="link-list-item"><a href="#my-work">Work</a></li>
-          <li class="link-list-item"><a href="#contact">Contact</a></li>
-          <li class="link-list-item"><a href="resume.html" target="_blank">Resume</a></li>
+          <li class="link-list-item"><a href="projects.html">Projects</a></li>
+          <li class="link-list-item" id="contact-link"><a href="#contact">Contact</a></li>
+          <li class="link-list-item"><a href="resume.html">About</a></li>
         </ul>
       </nav>
     </header>
@@ -34,21 +37,13 @@
         <div id="about">
 
           <div class="frame" id="about-box">
-            <p>Hello World!</p>
-
-            <p>I’m Amber and I am a former Cosmetologist working toward becoming a Web Developer. In June of 2020, when
-            most of the world was shut down, I began learning how to code, a goal I have had for some time. I started by taking
-            frontend development classes with SheCodes, completing every class they offered at the time, then moved on to
-            freeCodeCamp and Codecademy to expand on the skills I had acquired from my initial courses.</p>
-
-            <p>I hope to begin work in a Junior Developer position in order to continue to learn as much as possible about web development in a professional team environment. I am also interested in mobile app and software development and hope to move on to learning
-            languages that will help me in those areas once I have a good grasp on all that I need for front end work.</p>
-
-            <p>I have earned an Associates degree in fine art where I learned the basics of color theory, design, and digital art. I
-            learned and worked with Adobe Photoshop, InDesign and Illustrator in my classes, primarily on Mac OS and would be happy
-            to refresh these skills if necessary. I have also worked many years in Cosmetology where communication, problem solving,
-            and patience have been crucial skills for success on the job.</p>
-
+            <div class="aboutWrapper">
+              <p>Hello World!</p>
+                          
+              <p>My name is Amber and I am an artist painting on the canvas on the web one line of code at a time.</p>
+                          
+              <p>I am a Javascript developer, familiar with React, and a former cosmetologist with a background in art and design basics.</p>
+            </div>
           </div>
 
         </div>
@@ -62,170 +57,39 @@
 
       <hr>
 
-      <section id="my-work">
-        <h2>My Work</h2>
-
-        <!--
-        <article>
-          <div class="tabsWrapper">
-                    
-            <div class="wrapper">
-              <div class="weatherTabs">
-                <div role="tablist" aria-label="Weather Tabs">
-                  <button role="tab" aria-selected="true" id="weather-img">Weather App</button>
-                  <button role="tab" aria-selected="false" id="weather-code">Code Links</button>
-                </div>
-              </div>
-                    
-                    
-              <div class="projectCard frame" role="tabpanel" aria-labelledby="weather-img" id="weather"></div>
-                    
-              <div role="tabpanel" aria-labelledby="weather-code" hidden>
-                    
-                <h3 class="projectLabel" id="weather-label">Weather Web App</h3>
-                <p class="skillsUsed" id="weather-skills">Two versions of a weather web application, one using pure JavaScript and
-                            another using React.</p>
-                    
-                <div class="flex btnBoxContainer">
-                  <div class="btnBox">
-                    <a class="button weatherBtn" href="https://unruffled-sammet-45d5b4.netlify.app/" target="_blank">JS Live</a>
-                    <a class="button weatherBtn" href="https://github.com/ambahjones/my-weather-app" target="_blank">JS Code</a>
-                  </div>
-                    
-                  <div class="btnBox">
-                    <a class="button weatherBtn" href="https://focused-brattain-c3d371.netlify.app/" target="_blank">React Live</a>
-                    <a class="button weatherBtn" href="https://github.com/ambahjones/weather-react" target="_blank">React Code</a>
-                  </div>
-                </div>
-                    
-              </div>
-                    
-            </div>
-                    
-          </div>
-        </article>
-      -->
-
-        <article class="projectTabNav">
-          <div class="btnContainer">
-            <button class="tab active" data-id="projects-panel">Project Images</button>
-            <button class="tab" data-id="links-panel">Source Code</button>
-          </div>
-        </article>
-
-        <article>
-          
-          <div class="panel active" id="projects-panel">
-            <div class="flex" id="projects-box">
-
-              <div class="projectCard frame" id="weather"></div>
-       
-              <div class="projectCard frame" id="tea-cozy"></div>
-             
-              <div class="projectCard frame" id="company-page"></div>
-
-              <div class="projectCard frame" id="club-page"></div>
-
-              <div class="projectCard frame" id="portfolio"></div>
-
-            </div>
-          </div>
-
-          <div class="panel" id="links-panel">
-            <div class="flex" id="links-box">
-
-            <div class="projectCard frame links" id="weather-links">
-              <h3 class="projectLabel" id="weather-label">Weather Web App</h3>
-              <p class="skillsUsed" id="weather-skills">Two versions of a weather web application, one using pure JavaScript and another using React.</p>
-              <div class="flex btnBoxContainer">
-                <div class="btnBox">
-                  <a class="button weatherBtn" href="https://unruffled-sammet-45d5b4.netlify.app/" target="_blank">JS Live</a>
-                  <a class="button weatherBtn" href="https://github.com/ambahjones/my-weather-app" target="_blank">JS Code</a>
-                </div>
-                <div class="btnBox">
-                  <a class="button weatherBtn" href="https://focused-brattain-c3d371.netlify.app/" target="_blank">React Live</a>
-                  <a class="button weatherBtn" href="https://github.com/ambahjones/weather-react" target="_blank">React Code</a>
-                </div>
-              </div>
-            </div>
-                        
-            <div class="projectCard frame links" id="tea-cozy-links">
-              <h3 class="projectLabel" id="tea-label">Tea Cozy mock website</h3>
-              <p class="skillsUsed" id="tea-skills">Flex box practice project usng course provided images and design spec sheet.</p>
-              <div class="btnBox2">
-                <a class="button" href="https://ambahjones.github.io/tea-cozy/" target="_blank">Live</a>
-                <a class="button" href="https://github.com/ambahjones/tea-cozy" target="_blank">Code</a>
-              </div>
-            </div>
-                      
-            <div class="projectCard frame links" id="company-page-links">
-              <h3 class="projectLabel" id="company-label">Faux Company Homepage</h3>
-              <p class="skillsUsed" id="company-skills">Homepage for a self created company using flex box and an individual design.</p>
-              <div class="btnBox2">
-                <a class="button" href="https://ambahjones.github.io/company-homepage/" target="_blank">Live</a>
-                <a class="button" href="https://github.com/ambahjones/company-homepage" target="_blank">Code</a>
-              </div>
-            </div>
-                        
-            <div class="projectCard frame links" id="club-page-links">
-              <h3 class="projectLabel" id="club-label">Faux club events page</h3>
-              <p class="skillsUsed" id="club-skills">Club events page using responsive design elements. Personal choice to link to company homepage.</p>
-              <div class="btnBox2">
-                <a class="button" href="https://ambahjones.github.io/club-page/" target="_blank">Live</a>
-                <a class="button" href="https://github.com/ambahjones/club-page" target="_blank">Code</a>
-              </div>
-            </div>
-                        
-            <div class="projectCard frame links" id="portfolio-links">
-              <h3 class="projectLabel" id="portfolio-label">Personal page</h3>
-              <p class="skillsUsed" id="portfolio-skills">The page you are currently viewing!</p>
-              <div class="btnBox2" id="portfolio-btn-box">
-                <a class="button" href="https://github.com/ambahjones/portfolio" target="_blank">Code</a>
-              </div>
-            </div>
-
-            </div>
-          </div>
-
-        </article>
-
-      </section>
-
-      <hr>
-
       <section id="skills">
         <h2>Skills</h2>
-
+            
         <div class="flex" id="skills-box">
-
+            
           <div class="skillsContainer">
             <div class="skillsCard frame">
               <img src="./resources/icons/html-icon.webp" alt="html icon">
             </div>
             <p class="label">HTML</p>
           </div>
-
+            
           <div class="skillsContainer">
             <div class="skillsCard frame">
               <img src="./resources/icons/css-icon.webp" alt="css icon">
             </div>
             <p class="label">CSS</p>
           </div>
-
+            
           <div class="skillsContainer">
             <div class="skillsCard frame">
-              <img src="./resources/icons/javascript-icon.webp" alt="javascript icon">          
+              <img src="./resources/icons/javascript-icon.webp" alt="javascript icon">
             </div>
             <p class="label">JavaScript</p>
           </div>
-
+            
           <div class="skillsContainer">
             <div class="skillsCard frame">
               <img src="./resources/icons/react-icon.webp" alt="react icon">
             </div>
             <p class="label">React</p>
           </div>
-          
+            
         </div>
       </section>
 

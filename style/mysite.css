@@ -9,6 +9,7 @@ html {
   --main-accent-color: #cccccc;
   background-color: var(--main-background-color);
   color: var(--main-accent-color);
+  font-family: "Roboto Mono", monospace;
 }
 
 .flex {
@@ -27,6 +28,15 @@ header {
   justify-content: flex-end;
   font-size: 2.4rem;
   border-bottom: 2px solid var(--main-accent-color);
+  justify-content: space-between;
+}
+
+.homeLink a {
+  line-height: 8rem;
+  font-size: 5.2rem;
+  color: var(--main-accent-color);
+  text-decoration: none;
+  padding-left: 2rem;
 }
 
 .linkList {
@@ -47,47 +57,44 @@ header {
   text-decoration: underline;
 }
 
-/*
-@media only screen and (min-width: 769px) and (max-width: 834px) {
+@media only screen and (max-width: 500px) {
   header {
-    height: 7rem;
+    font-size: 1.6rem;
   }
-}
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  header {
-    height: 6rem;
+  #contact-link {
+    display: none;
   }
-}*/
 
-@media only screen and (max-width: 480px) {
-  header {
-    font-size: 1.8rem;
+  .homeLink a {
+    font-size: 3.2rem;
   }
 }
 
 @media only screen and (max-width: 320px) {
   header {
     height: 6rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  nav {
+    width: 55%;
+  }
+
+  #contact-link {
+    display: none;
+  }
+
+  .homeLink a {
+    line-height: 6rem;
+    padding: 1rem;
+    font-size: 3rem;
   }
 }
 
 main {
   margin-top: 8rem;
 }
-
-/*@media only screen and (min-width: 769px) and (max-width: 834px) {
-  main {
-    margin-top: 7rem;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  main {
-    margin-top: 6rem;
-  }
-}*/
 
 @media only screen and (max-width: 320px) {
   main {
@@ -145,10 +152,11 @@ h1 {
   font-size: 8.6rem;
   text-align: center;
   line-height: 15rem;
+  font-family: "Cutive Mono", monospace;
+  font-weight: 700;
 }
 
 #heading-container h1 {
-  /*position: relative;*/
   z-index: 5;
   color: black;
   width: 100%;
@@ -159,7 +167,6 @@ h2 {
 }
 
 #heading-container h2 {
-  /*position: relative;*/
   font-size: 3.6rem;
   line-height: 10rem;
   z-index: 5;
@@ -179,25 +186,14 @@ h2 {
   }
 }
 
-/*@media only screen and (min-width: 835px) and (max-width: 1200px) {
-  #headline h1 {
-    padding-top: 15rem;
+@media only screen and (max-width: 320px) {
+  #heading-container h1 {
+    font-size: 4.6rem;
   }
 }
-
-@media only screen and (min-width: 769px) and (max-width: 834px) {
-  #headline h1 {
-    padding-top: 3rem;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  #headline h1 {
-    padding-top: 3.4rem;
-  }
-}*/
 
 #intro {
+  justify-content: space-between;
   width: 90%;
   height: 60rem;
   margin: 0 auto;
@@ -211,13 +207,22 @@ h2 {
   width: 85%;
   height: 30rem;
   margin: 15rem auto;
-  overflow: scroll;
+}
+
+.aboutWrapper {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem 0;
+}
+
+.aboutWrapper p {
+  padding: 1.5rem;
 }
 
 p {
   font-size: 1.7rem;
   text-align: left;
-  padding: 2rem;
+  padding: 0.6rem;
 }
 
 #intro-img {
@@ -252,10 +257,11 @@ p {
 
   #about-box {
     margin: 2rem auto;
+    height: auto;
   }
 
   #img-frame {
-    margin: 2rem auto;
+    margin: 7rem auto;
   }
 }
 
@@ -271,14 +277,15 @@ p {
 
   #about-box {
     margin: 2rem auto;
+    height: auto;
   }
 
   #intro-img {
-    width: 35%;
+    width: 45%;
   }
 
   #img-frame {
-    margin: 2rem auto;
+    margin: 7rem auto;
   }
 }
 
@@ -297,6 +304,7 @@ p {
   #about-box {
     width: 75%;
     margin: 2rem auto;
+    height: auto;
   }
 
   #intro-img {
@@ -313,6 +321,7 @@ p {
   #about-box {
     width: 90%;
     margin: 2rem auto;
+    height: auto;
   }
 
   #intro-img {
@@ -328,296 +337,6 @@ p {
     font-size: 1.5rem;
   }
 }
-
-#my-work {
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
-  padding-bottom: 2rem;
-}
-
-#my-work h2 {
-  padding: 4rem 0;
-}
-
-.panel.active {
-  display: block;
-}
-
-.panel {
-  display: none;
-}
-
-.btnContainer {
-  display: flex;
-  justify-content: space-between;
-  width: 40%;
-  height: 8rem;
-  margin: 0 auto;
-}
-
-button {
-  cursor: pointer;
-  font-size: 1.6rem;
-  font-family: "Times New Roman", Times, serif;
-  background-color: var(--main-background-color);
-  color: var(--main-accent-color);
-  border: 3px solid var(--main-accent-color);
-  border-radius: 5px;
-  height: 5rem;
-  width: 45%;
-}
-
-@media only screen and (min-width: 481px) and (max-width: 834px) {
-  .btnContainer {
-    width: 60%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .btnContainer {
-    width: 90%;
-  }
-}
-
-#projects-box,
-#links-box {
-  height: 50.5rem;
-  overflow: scroll;
-  justify-content: space-around;
-}
-
-.projectCard {
-  width: 45%;
-  height: 20rem;
-  margin: 2rem auto;
-}
-
-/*
-trying out alternative tab set up
-.tabsWrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 10px;
-}
-
-.wrapper {
-  display: grid;
-  width: 45%;
-}
-
-.weatherTabs {
-  margin: 0 auto;
-  width: 96%;
-}
-
-[role="tablist"] {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 10px;
-  width: 90%;
-}
-
-[role="tab"] {
-  border-bottom: none;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  width: 75%;
-}
-
-[role="tabpanel"] {
-  margin-top: 0px;
-  width: 95%;
-  border-top-left-radius: 0px;
-}
-*/
-
-@media only screen and (min-width: 835px) and (max-width: 1200px) {
-  .projectCard {
-    width: 100%;
-    height: 30rem;
-  }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 834px) {
-  .projectCard {
-    width: 100%;
-    height: 25rem;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .projectCard {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .projectCard {
-    width: 100%;
-    height: 15rem;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .projectCard {
-    height: 10rem;
-  }
-}
-
-#weather {
-  background-image: url(../resources/images/react-weather.png);
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#tea-cozy {
-  background-image: url(../resources/images/tea\ cozy.png);
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#company-page {
-  background-image: url(../resources/images/company\ page.png);
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#club-page {
-  background-image: url(../resources/images/club\ page.png);
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#portfolio {
-  background-image: url(../resources/images/portfolio.png);
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#links-box h3 {
-  font-size: 2rem;
-  padding-top: 1.2rem;
-}
-
-.btnBox {
-  display: inline;
-  width: 45%;
-  height: 10rem;
-}
-
-.button {
-  height: 3rem;
-  width: 12.5rem;
-  margin: 0 2rem;
-  padding: 0.5rem 1rem;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 2rem;
-  color: var(--main-accent-color);
-  border: 3px solid var(--main-accent-color);
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.skillsUsed {
-  width: 75%;
-  margin: 0 auto;
-  font-size: 1.4rem;
-  text-align: center;
-  padding: 1rem;
-}
-
-.btnBoxContainer {
-  width: 90%;
-  margin: 0 auto;
-  justify-content: space-around;
-}
-
-.btnBox .weatherBtn {
-  display: block;
-  margin: 0.5rem auto;
-  /*padding: 0.5rem 0 0 0;*/
-  width: 60%;
-  line-height: 3rem;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.btnBox2 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 10rem;
-  line-height: 3rem;
-  width: 60%;
-}
-
-#portfolio-btn-box {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-@media only screen and (min-width: 835px) and (max-width: 1200px) {
-  #links-box h3 {
-    font-size: 2.8rem;
-    padding: 2rem 0;
-  }
-
-  .skillsUsed {
-    font-size: 1.6rem;
-  }
-
-  .btnBoxContainer {
-    margin-top: 2rem;
-  }
-
-  .btnBox .weatherBtn {
-    height: 4rem;
-    padding: 1rem 0 0 0;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .links {
-    height: auto;
-  }
-
-  .btnBoxContainer {
-    padding-bottom: 1rem;
-  }
-
-  .btnBox .weatherBtn {
-    width: 90%;
-  }
-
-  #links-box h3 {
-    font-size: 1.4rem;
-    padding: 1rem 0;
-  }
-
-  .skillsUsed {
-    display: none;
-  }
-
-  .btnBox2 {
-    width: 80%;
-  }
-
-  .button {
-    width: 45%;
-  }
-}
-
-/*#skills {
-  width: 80%;
-  margin: 0 auto;
-  padding: 2rem 0;
-}*/
 
 #skills h2 {
   padding: 2rem 0;
@@ -653,15 +372,6 @@ trying out alternative tab set up
 .label {
   text-align: center;
 }
-
-/*@media only screen and (max-width: 480px) {
-  #skills {
-    height: auto;
-  }
-
-  #skills-box {
-  }
-}*/
 
 @media only screen and (max-width: 500px) {
   #skills {
@@ -705,10 +415,6 @@ trying out alternative tab set up
     width: 6.5rem;
   }
 }
-
-/*#contact {
-  height: 30rem;
-}*/
 
 #contact h2 {
   padding: 2rem 0;
