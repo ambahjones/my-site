@@ -195,7 +195,7 @@ h2 {
 #intro {
   justify-content: space-between;
   width: 90%;
-  height: 60rem;
+  //height: 60rem;
   margin: 0 auto;
 }
 
@@ -204,9 +204,9 @@ h2 {
 }
 
 #about-box {
-  width: 85%;
-  height: 30rem;
-  margin: 15rem auto;
+  width: 95%;
+  //height: 30rem;
+  margin: 10rem auto;
 }
 
 .aboutWrapper {
