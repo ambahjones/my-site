@@ -28,20 +28,25 @@ header {
   justify-content: flex-end;
   font-size: 2.4rem;
   border-bottom: 2px solid var(--main-accent-color);
-  justify-content: space-between;
+  //justify-content: center;
 }
 
 .homeLink a {
-  line-height: 8rem;
-  font-size: 5.2rem;
   color: var(--main-accent-color);
   text-decoration: none;
   padding-left: 2rem;
 }
 
+#home500pxup {
+  line-height: 8rem;
+  font-size: 5rem;
+}
+
 .linkList {
   list-style: none;
   padding: 1rem;
+  width: full;
+  text-align: center;
 }
 
 .link-list-item {
@@ -63,7 +68,7 @@ header {
   }
 
   #contact-link {
-    display: none;
+    //display: none;
   }
 
   .homeLink a {
@@ -219,6 +224,21 @@ h2 {
   padding: 1.5rem;
 }
 
+.aboutWrapper h2 {
+  font-size: 2rem;
+}
+
+.aboutWrapper ul {
+  list-style: none;
+  text-align: left;
+  font-size: 1.7rem;
+}
+
+.aboutWrapper li a {
+  //text-decoration: none;
+  color: var(--main-accent-color);
+}
+
 p {
   font-size: 1.7rem;
   text-align: left;
@@ -302,9 +322,13 @@ p {
   }
 
   #about-box {
-    width: 75%;
-    margin: 2rem auto;
+    width: 95%;
+    margin: 0 auto;
     height: auto;
+  }
+
+  .aboutWrapper {
+    padding: 0;
   }
 
   #intro-img {
@@ -313,7 +337,7 @@ p {
   }
 
   #img-frame {
-    margin: 2rem auto;
+    margin: 0 auto;
   }
 }
 
@@ -338,86 +362,23 @@ p {
   }
 }
 
-#skills h2 {
-  padding: 2rem 0;
-}
-
-#skills-box {
-  width: 90%;
-  height: 20rem;
-  margin: 0 auto;
-  justify-content: space-around;
-  align-content: center;
-}
-
-.skillsContainer {
-  width: 12rem;
-  height: 15rem;
-}
-
-.skillsCard {
-  margin: 0 auto;
-  width: 10rem;
-  height: 10rem;
-  background-color: var(--main-accent-color);
-}
-
-.skillsCard img {
-  display: block;
-  margin: 1rem auto;
-  width: 8rem;
-  height: 8rem;
-}
-
 .label {
   text-align: center;
 }
 
-@media only screen and (max-width: 500px) {
-  #skills {
-    height: auto;
-  }
-
-  #skills-box {
-    padding: 2.5rem 0;
-    width: 90%;
-    height: auto;
-  }
-
-  #skills h2 {
-    padding: 1.5rem 0;
-  }
-
-  .skillsContainer {
-    width: 7.5rem;
-    height: 12rem;
-  }
-
-  .label {
-    font-size: 1.1rem;
-  }
-
-  .skillsCard {
-    width: 6rem;
-    height: 6rem;
-  }
-
-  .skillsCard img {
-    display: block;
-    margin: 1rem auto;
-    width: 4rem;
-    height: 4rem;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .skillsContainer {
-    width: 6.5rem;
-  }
+#contact {
+  width: 90%;
+  margin: 0 auto;
 }
 
 #contact h2 {
+  font-size: 2.4rem;
   padding: 2rem 0;
+}
+
+#contact p {
+  width: 90%;
+  margin: 0 auto;
 }
 
 #contact-box {
